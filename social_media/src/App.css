@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #e8f0f2;
+  background-color: white;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -35,7 +35,7 @@
   text-align: center;
   width: 40%;
   border: 1px solid #d7ecef;
-  border-radius: 3px;
+  border-radius: 15px;
   padding: 5px;
   margin-top: 20px;
 }
@@ -85,4 +85,60 @@ h1{
 }
 ul{
   list-style-type: none;
+}
+/*********************************/
+/*           ICONS               */
+/*********************************/
+
+.fa-heart:hover {
+    box-decoration-break: slice;
+    text-shadow: 3px 1px 3px rgba(0,0,0,0.3);
+}
+.fa-heart{
+  color: #f44242;
+}
+i{
+  margin-right: 10px;
+}
+/*********************************/
+/*           Form               */
+/*********************************/
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label, input {
+    /* in order to define widths */
+    display: inline-block;
+}
+
+label {
+    width: 30%;
+    /* positions the label text beside the input */
+    text-align: right;
+}
+
+label + input {
+    width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 30% 0 4%;
+}
+
+/* only the submit button is matched by this selector,
+   but to be sure you could use an id or class for that button */
+input + input {
+    float: right;
+}
+
+.submit{
+  margin-right: x0%;
+  font-size: 20px;
+  align: center;
+  width:30px;
+}
+.submit:hover{
+  text-shadow: 3px 1px 3px rgba(0,0,0,0.3);
 }
