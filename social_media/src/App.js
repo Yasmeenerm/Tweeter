@@ -86,31 +86,7 @@ handleComment(i, event){
           <img src={logo} className="App-logo" alt="logo" />
           <h2 className="App-title">Tweeter</h2>
         </header>
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-sm-4">
-          <form>
-              <label>User url</label>
-              <input type="url" name="User profile picture" />
-              <br/>
-              <label>Author</label>
-              <input type="text" name="Author" />
-              <br/>
-              <label>Image url</label>
-              <input type="img" name="Image" />
-              <br/>
-              <label>CaptionHeader</label>
-              <input type="text" name="Caption header" />
-              <br/>
-              <label>Caption</label>
-              <input type="text" name="Caption" />
-              </form>
-            </div>
-            <div className="col-sm-4">
-            <input className="submit" type="image" src={arrow} alt="Submit" />
-          </div>
-          </div>
-          </div>
+        
         <ul>
           {(display) ? display : null}
         </ul>
